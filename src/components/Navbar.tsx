@@ -6,7 +6,7 @@ import { useState } from "react";
 import Image from "next/image";
 
 const Navbar = () => {
-  const [user, setUser] = useState(true);
+  const [user, setUser] = useState(false);
   return (
     <div className="h-12 text-red-500 p-4 flex justify-between items-center border-b-2 border-b-red-500 uppercase md:h-24">
       <div className="hidden md:flex gap-4">
@@ -29,7 +29,7 @@ const Navbar = () => {
             Login
           </Link>
         ) : (
-          <Link href="/menu ">Orders</Link>
+          <Link href="/orders">Orders</Link>
         )}
         <div className="flex items-center gap-2 cursor-pointer font-bold text-yellow-400 rounded-md">
           <Image
